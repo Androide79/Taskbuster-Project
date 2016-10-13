@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Pierluigi D'Antona -- Developer -- @Pigi79
 
 # THANKS
 
-    <name>
+    To all the peoples that support me!
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Python, Django
+    Twitter Bootstrap
