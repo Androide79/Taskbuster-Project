@@ -51,7 +51,7 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
     
     def test_localization(self):
         today = date.today()
-        for lang in ['en', 'ca']:
+        for lang in ['en', 'it']:
             activate(lang)
             self.browser.get(self.get_full_url("home"))
             local_date = self.browser.find_element_by_id("local-date")

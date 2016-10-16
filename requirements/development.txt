@@ -1,5 +1,4 @@
-Django==1.10.2
-pytz==2016.7
+-r base.txt
 alabaster==0.7.9
 Babel==2.3.4
 docutils==0.12
