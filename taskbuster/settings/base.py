@@ -119,7 +119,7 @@ LOCALE_PATHS = (
 )
 
 #Localization
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Rome'
 
 USE_L10N = True
 
