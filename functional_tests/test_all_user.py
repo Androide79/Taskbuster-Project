@@ -9,7 +9,8 @@ from django.core.urlresolvers import reverse
 #from django.contrib.staticfiles.testing import LiveServerTestCase 
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase 
 from django.utils.translation import activate
- 
+from datetime import date
+from django.utils import formats
  
 class HomeNewVisitorTest(StaticLiveServerTestCase): 
  
@@ -47,3 +48,14 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
             self.browser.get(self.get_full_url("home"))
             h1 = self.browser.find_element_by_tag_name("h1")
             self.assertEqual(h1.text, h1_text)
+    
+    def test_localization(self):
+        today = date.today()
+        for lang in ['en', 'ca']:
+            activate(lang)
+            self.browser.get(self.get_full_url("home"))
+            local_date = self.browser.find_element_by_id("local-date")
+            non_local_date = self.browser.find_element_by_id("non-local-date")
+            self.assertEqual(formats.date_format(today, use_l10n=True),
+                                  local_date.text)
+            self.assertEqual(today.strftime('%Y-%m-%d'), non_local_date.text)
