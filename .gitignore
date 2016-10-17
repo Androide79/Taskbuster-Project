@@ -1,0 +1,13 @@
+.project
+.pydevproject
+.settings/*
+geckodriver.log
+db.sqlite3
+taskbuster/__pycache__/*
+taskbuster/db.sqlite3
+taskbuster/__init__.py
+taskbuster/settings/__pycache__/*
+taskbuster/settings/__init__.py
+.coverage
+htmlcov/*
+functional_tests/__pycache__/test_all_user.cpython-35.pyc
