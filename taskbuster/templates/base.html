@@ -62,13 +62,11 @@
 			    {% if user.is_authenticated %}
 			      <a id="logout" href="/accounts/logout" class="btn btn-success">Logout</a>
 			    {% else %} 
-			      <a id="google_login" href="/accounts/google/login" class="btn btn-success">			      	
-			        Sign in with Google
-			      </a>
+			      <a id="google_login" href="/accounts/google/login" class="btn btn-success">Sign in with Google</a>
+			      <a id="twitter_login" href="/accounts/twitter/login" class="btn btn-success">Sign in with Twitter</a>
 			    {% endif %}
 			  </div>
 		  </div><!--/.navbar-collapse -->
-        
         </div>
       </nav>
     {% endblock %}
