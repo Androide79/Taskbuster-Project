@@ -12,3 +12,6 @@ taskbuster/settings/__init__.py
 htmlcov/*
 functional_tests/__pycache__/*.pyc
 taskbuster/fixtures/*
+taskbuster/apps/__pycache__/*
+taskbuster/apps/taskmanager/__pycache__/*
+taskbuster/apps/taskmanager/migrations/*
